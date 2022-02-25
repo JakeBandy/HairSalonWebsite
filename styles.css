@@ -1,0 +1,89 @@
+* 
+{
+  box-sizing: border-box;
+}
+body 
+{
+  margin: 0;
+}
+.main-container 
+{
+  border: 1px solid red;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+header,
+main,
+section,
+footer
+{
+  border: 2px solid blue;
+}
+header
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+header nav
+{
+  width: 400px;
+}
+header nav ul
+{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+header nav ul li a
+{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header nav ul li a:hover
+{
+  color: aqua;
+}
+main
+{
+  height: 446px;
+  background-image: url('https://freewebsitetemplates.com/preview/mustacheenthusiast/images/the-beacon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+main .main-text
+{
+  border: 3px solid green;
+}
+main .main-text h2
+{
+  text-transform: uppercase;
+}
+section
+{
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+section div:not(div:nth-child(3))
+{
+  margin-right: 20px;
+}
+@media (max-width: 900px)
+{
+  section 
+  {
+    flex-direction: column;
+    height: 100%;
+  }
+}
